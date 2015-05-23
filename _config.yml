@@ -3,9 +3,7 @@ title:       Wagner Souza
 email:       wagnersza@gmail.com
 author:      Wagner Souza
 description: "Um pouco sobre Infra Estrutura Web"
-# baseurl:     "wagnersza.github.io"
-url:         "wagnersza.github.io"
-
+url: /
 # Google analytics
 google_analytics:
 
