@@ -5,7 +5,7 @@ author:      Wagner Souza
 description: "Um pouco sobre Infra Estrutura Web"
 url: /
 # Google analytics
-google_analytics:
+google_analytics: UA-63396057-1
 
 # Optional features
 animated:           true
