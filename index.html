@@ -7,7 +7,25 @@ layout: default
   <div class="posts">
     {% for post in paginator.posts %}
       <div class="post">
-        <p class="post-meta">{{ post.date | date: "%-d %b, %Y" }}</p>
+        <span class="post-meta">
+          {% assign m = post.date | date: "%-m" %}
+          {{ post.date | date: "%-d" }}
+          {% case m %}
+          {% when '1' %}de Janeiro de
+          {% when '2' %}de Fevereiro de
+          {% when '3' %}de Março de
+          {% when '4' %}de Abril de
+          {% when '5' %}de Maio de
+          {% when '6' %}de Junho de
+          {% when '7' %}de Julho de
+          {% when '8' %}de Agosto de
+          {% when '9' %}de Setembro de
+          {% when '10' %}de Outubro de
+          {% when '11' %}de Novembro de
+          {% when '12' %}de Dezembro de
+          {% endcase %}
+          {{ post.date | date: "%Y" }}
+        </span><br>
         <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="h2 post-title">{{ post.title }}</h3></a>
         <p class="post-image">
           {% if post.image %}
